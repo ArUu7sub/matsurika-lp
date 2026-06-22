@@ -110,11 +110,11 @@ h3 { font-size: 1.1rem; }
 .about { max-width: none; display: grid; grid-template-columns: 1.2fr .9fr; gap: 26px; padding-left: max(24px, calc((100% - var(--max)) / 2)); padding-right: max(24px, calc((100% - var(--max)) / 2)); background: linear-gradient(90deg, #fff9f6, #fff); }
 .about-reverse { grid-template-columns: .9fr 1.2fr; padding-top: 0; background: linear-gradient(90deg, #fff, #fff9f6); }
 .profile-card { display: grid; grid-template-columns: 42% 1fr; gap: 28px; padding: 18px; background: #fff; border-radius: 10px; box-shadow: var(--shadow); }
-.profile-image { width: 100%; height: 100%; min-height: 330px; display: block; border-radius: 7px; object-fit: cover; object-position: center 28%; }
+.profile-image { width: 100%; height: 100%; min-height: 330px; display: block; border-radius: 7px; object-fit: cover; object-position: center 18%; }
 .profile-copy { position: relative; padding: 16px 8px 8px 0; }
-.profile-copy h2 { display: inline-block; margin-right: 8px; font-size: 1.65rem; }
-.profile-tag { display: inline-block; padding: 3px 10px; color: var(--pink-dark); background: var(--pink-soft); border-radius: 999px; font-size: .66rem; }
-.profile-points { padding: 0; margin: 5px 0 18px; list-style: none; font-size: .76rem; }
+.profile-copy h2 { margin: 0 0 12px; font-size: 1.65rem; }
+.profile-tag { display: inline-block; margin-bottom: 10px; padding: 3px 10px; color: var(--pink-dark); background: var(--pink-soft); border-radius: 999px; font-size: .66rem; }
+.profile-points { padding: 0; margin: 0 0 18px; list-style: none; font-size: .76rem; }
 .profile-points li { display: grid; grid-template-columns: 8px 1fr; align-items: center; gap: 10px; padding: 4px 0; }
 .profile-points li::before { content: ""; width: 3px; height: 3px; justify-self: center; background: var(--pink); border-radius: 50%; }
 .profile-copy dl { display: grid; grid-template-columns: 82px 1fr; margin: 0; font-size: .69rem; }
@@ -259,8 +259,7 @@ h3 { font-size: 1.1rem; }
 .salon-gallery figure:last-child img { object-position: center 42%; }
 .salon-gallery figcaption { padding: 12px 16px 14px; color: var(--ink); font-size: .74rem; font-weight: 700; line-height: 1.65; text-align: center; }
 
-.contact { max-width: none; display: grid; grid-template-columns: 180px 1fr auto; gap: 32px; align-items: center; padding: 28px max(24px, calc((100% - var(--max)) / 2)); background: linear-gradient(100deg, #fff3f1, #fffaf5); border-top: 1px solid #f8e4e0; }
-.contact-image { width: 180px; height: 160px; display: block; align-self: end; border: 0; border-radius: 10px 10px 0 0; object-fit: cover; object-position: center 24%; }
+.contact { max-width: none; display: grid; grid-template-columns: 1fr auto; gap: 32px; align-items: center; padding: 36px max(24px, calc((100% - var(--max)) / 2)); background: linear-gradient(100deg, #fff3f1, #fffaf5); border-top: 1px solid #f8e4e0; }
 .contact h2 { margin-bottom: 6px; font-size: 1.65rem; }
 .contact h2 span { color: var(--pink-dark); }
 .contact p { margin-bottom: 0; font-size: .75rem; }
@@ -319,7 +318,7 @@ footer small { grid-column: 1 / -1; text-align: center; font-size: .65rem; opaci
   .company-list { grid-template-columns: 1fr 1fr; }
   .salon-gallery { grid-template-columns: 1fr 1fr; }
   .salon-gallery img { height: 240px; }
-  .contact { grid-template-columns: 130px 1fr; padding: 45px 20px; }
+  .contact { grid-template-columns: 1fr; padding: 45px 20px; }
   .contact .button { grid-column: 1 / -1; width: 100%; }
 }
 
@@ -404,7 +403,6 @@ footer small { grid-column: 1 / -1; text-align: center; font-size: .65rem; opaci
   .salon-gallery img { height: 215px; }
   .salon-gallery figcaption { padding: 10px 13px 12px; font-size: .7rem; }
   .contact { grid-template-columns: 1fr; text-align: center; }
-  .contact-image { width: 130px; height: 130px; display: block; margin: -18px auto 0; border-radius: 50%; object-position: center 20%; }
   .contact .button { min-width: 0; }
   footer { grid-template-columns: 1fr; text-align: center; }
   footer nav { justify-content: center; flex-wrap: wrap; gap: 12px 20px; }
