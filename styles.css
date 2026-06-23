@@ -343,9 +343,9 @@ footer small { grid-column: 1 / -1; text-align: center; font-size: .65rem; opaci
   .reasons-grid, .flow-list, .faq-list { grid-template-columns: 1fr; }
   .reason-card h3 { min-height: auto; }
   .card-image { height: 170px; }
-  .profile-card { grid-template-columns: 1fr; }
-  .profile-image { min-height: 310px; }
-  .profile-copy { padding: 8px; }
+  .profile-card { grid-template-columns: 1fr; grid-template-rows: auto auto; align-items: start; }
+  .profile-image { height: auto; min-height: 0; aspect-ratio: 4 / 3; object-position: center 18%; }
+  .profile-copy { z-index: 1; padding: 8px; background: #fff; }
   .message-card { padding: 34px 25px; }
   .flow-section { margin: 0 10px; padding: 35px 10px; }
   .flow-list li::after { display: none; }
